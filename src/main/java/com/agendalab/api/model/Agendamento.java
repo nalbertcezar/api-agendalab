@@ -31,6 +31,9 @@ public class Agendamento {
 	private LocalDate data;
 	private LocalTime hora;
 	
+	public Agendamento() {
+	}
+	
 	public Agendamento(Long id, Usuario usuario, LocalDate data, LocalTime hora) {
 		this.id = id;
 		this.usuario = usuario;

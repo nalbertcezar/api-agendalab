@@ -21,6 +21,9 @@ public class Usuario {
 	private String nomeusuario;
 	private String senha;
 	
+	public Usuario() {
+	}
+	
 	public Usuario(DadosCadastroUsuario dados) {
 		this.nome = dados.nome();
 		this.nomeusuario = dados.nomeusuario();
