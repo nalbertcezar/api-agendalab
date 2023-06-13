@@ -5,10 +5,10 @@ import java.time.LocalTime;
 
 import com.agendalab.api.model.Agendamento;
 
-public record DadosListagemAgendamento(String nome, LocalDate data, LocalTime hora) {
+public record DadosListagemAgendamento(Long id, String nome, LocalDate data, LocalTime hora) {
 
 	public DadosListagemAgendamento(Agendamento agendamento) {
-		this(agendamento.getUsuario().getNome(), agendamento.getData(), agendamento.getHora());
+		this(agendamento.getId(), agendamento.getUsuario().getNome(), agendamento.getData(), agendamento.getHora());
 	}
 	
 }
